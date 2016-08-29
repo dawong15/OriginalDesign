@@ -1,18 +1,10 @@
 
-int x=10;
-int y=10;
+int x1=10;
+int x2=10;
 
-drawCloud(x,y)
-{
-    noStroke();
-    fill(255,255,255);
-    ellipse(x+119,y+30,25,20);
-    ellipse(x+136,y+21,30,31);
-    ellipse(x+150,y+30,50,30);
-    ellipse(x+160,y+20,25,25);
-    ellipse(x+170,y+30,25,25);
-
-};
+void setup()
+{size(400,400);
+}
 void draw()
  {
     background(34, 181, 204);
@@ -24,15 +16,34 @@ void draw()
     triangle(150,400,200,128,350,400);
     triangle(250,400,350,210,400,400);
     triangle(205,400,297,175,368,400);
-    drawCloud(x,50);
-    drawCloud(x+140,89);
+    
     fill(221, 255, 0);
     ellipse(40,40,40,40);
-    x=x-1;
-     if (x<-150)
-        {x=450;
-        }
+
+    fill(255,255,255);
+    noStroke();
+    ellipse(x1+119,40,25,20);
+    ellipse(x1+136,31,30,31);
+    ellipse(x1+150,40,50,30);
+    ellipse(x1+160,30,25,25);
+    ellipse(x1+170,40,25,25);
+
+    ellipse(x2+260,119,25,20);
+    ellipse(x2+276,110,30,31);
+    ellipse(x2+290,119,50,30);
+    ellipse(x2+300,109,25,25);
+    ellipse(x2+310,119,25,25);
     
-};
+
+    x1=x1-1;
+        if (x1<-125)
+            {x1=450;
+        }
+    x2=x2-1;
+        if (x2<-250)
+            {x2=450;
+        }
+}
+
 
 
